@@ -12,6 +12,7 @@ public class ChatRequest {
     public ChatRequest(String model, String prompt, int n) {
         this.model = model;
         this.messages = new ArrayList<>();
+        //this.messages.add(new Message("system", "Du är en dietist med 20 års erfarenhet av att hjälpa folk äta rätt. Du ger förslag på hälsosamma vegitariska rätter!"));
         this.messages.add(new Message("user", prompt));
         this.n = n;
     }
